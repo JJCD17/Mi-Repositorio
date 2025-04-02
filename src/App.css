@@ -1,0 +1,148 @@
+.App {
+    position: relative;
+    z-index: 1;
+    width: 100%; /* Contenedor ocupe todo el ancho */
+    max-width: 1200px; 
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#inicio {
+    background: transparent;
+}
+
+h1{
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+h2,
+h3 {
+    margin: 10px 0;
+}
+
+p {
+    font-size: large;
+    max-width: 900px;
+    margin: 0 auto 24px auto;
+    text-align: left;
+}
+
+.buttons,
+.tech-buttons,
+.tool-buttons,
+.project-tech {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Estilo hover para los botones */
+button:hover {
+    transform: scale(1.1);
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-contacto {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-contacto:hover {
+    background-color: #007bff3a;
+    border-color: #007bff;
+    color: #007bff;
+    box-shadow: 0 0 10px #007bff;
+}
+
+.btn-cv {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-cv:hover {
+    background-color: #28a7453a;
+    border-color: #28a745;
+    color: #28a745;
+    box-shadow: 0 0 10px #28a745;
+}
+
+.btn-github {
+    background-color: #6f42c1;
+    border-color: #6f42c1;
+}
+
+.btn-github:hover {
+    background-color: #6f42c13a;
+    border-color: #6f42c1;
+    color: #6f42c1;
+    box-shadow: 0 0 10px #6f42c1;
+}
+
+.education-item,
+.project-item {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+img {
+    pointer-events: auto;  
+    user-drag: none;          
+    -webkit-user-drag: none;  
+    user-select: none;        
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.tierra{
+    width: 400px;
+}
+
+.moon{
+    width: 100px;
+}
+
+.marte{
+    width: 300px;
+}
+
+.jupiter{
+    width: 550px;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-float {
+    animation: float 4s ease-in-out infinite;
+}

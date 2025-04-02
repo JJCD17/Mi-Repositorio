@@ -21,32 +21,32 @@ El sitio está diseñado para ser fácil de navegar, con animaciones suaves y un
 
 ## Instalación y configuración
 
-Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
+- Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 
 1. Clonar el repositorio:
 
-git clone https://github.com/tu-usuario/tu-repositorio.git
+- git clone https://github.com/tu-usuario/tu-repositorio.git
 
 2. Instalar las dependencias:
 
-cd tu-repositorio
-npm install
+- cd tu-repositorio
+- npm install
 
 O si usas Yarn:
 
-yarn install
+- yarn install
 
 3. Ejecutar el servidor de desarrollo:
 
-npm run dev
+- npm run dev
 
 O con Yarn:
 
-yarn dev
+- yarn dev
 
 4. Abre tu navegador:
 
-Accede a http://localhost:5173/ para ver el sitio en acción.
+- Accede a http://localhost:5173/ para ver el sitio en acción.
 
 5. Funcionalidades
 
