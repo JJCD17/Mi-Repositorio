@@ -33,12 +33,7 @@ function App() {
       <section
         id="inicio" className="min-h-screen flex flex-col items-center justify-center text-center p-5 relative">
         <img src="src/assets/img/planetas/tierra.png" alt="Planeta" className="tierra animate-float" />
-        <h1 className="text-5xl font-bold mb-4 text-cyan-500">
-          Jonathan Javier Cobos Domínguez
-        </h1>
-        <h2 className="text-3xl mb-8">
-          Ingeniero en Gestión y Desarrollo de Software
-        </h2>
+        <h2 className="text-3xl font-bold mb-4">Sobre Mí</h2>
         <p>
           Hola, Soy Jonathan, desarrollador de software con pasión por la innovación y la creación de soluciones tecnológicas.
           Siempre en busca de nuevos retos que me ayuden a crecer profesionalmente y a llevar mis habilidades al siguiente nivel.
@@ -59,7 +54,10 @@ function App() {
             <span>GitHub</span>
           </button>
           <button className="btn-cv px-6 py-2 rounded-lg transition-all flex items-center gap-2" onClick={handleDownload} >
-            <img className="w-5 h-5" src="src/assets/img/logos/cv.png" alt="CV" />
+            <svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z" />
+              <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+            </svg>
             <span>Descargar CV</span>
           </button>
         </div>

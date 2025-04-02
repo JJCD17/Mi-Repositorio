@@ -21,7 +21,8 @@
 }
 
 .menu-toggle {
-    display: none; /* Ocultar el botón hamburguesa por defecto */
+    display: none;
+    /* Ocultar el botón hamburguesa por defecto */
 }
 
 /* Estilo del menú */
@@ -47,7 +48,8 @@
     }
 
     .menu ul {
-        display: none;  /* Ocultar el menú por defecto */
+        display: none;
+        /* Ocultar el menú por defecto */
         flex-direction: column;
         background-color: rgba(0, 0, 0, 0.9);
         border-radius: 10px;
@@ -55,6 +57,7 @@
     }
 
     .menu.active ul {
-        display: flex;  /* Mostrar el menú cuando el botón hamburguesa está activo */
+        display: flex;
+        /* Mostrar el menú cuando el botón hamburguesa está activo */
     }
 }
