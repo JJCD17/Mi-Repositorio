@@ -3,7 +3,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     background: #000000;
     overflow: hidden;
     z-index: -1;
@@ -99,5 +100,52 @@
     100% {
         transform: translateX(-100vw) translateY(100vh) scaleX(0);
         opacity: 0;
+    }
+}
+
+/* MEDIA QUERIES PARA PANTALLAS MÁS PEQUEÑAS */
+@media (max-width: 768px) {
+    .galaxy-center {
+        width: 150vw;
+        height: 150vh;
+        filter: blur(40px);
+        transform: scale(1.2, 0.5) skewY(-5deg);
+    }
+
+    .galaxy-arms {
+        width: 200vw;
+        height: 200vh;
+        filter: blur(80px);
+        opacity: 0.4;
+        animation-duration: 90s;
+    }
+
+    .comet {
+        width: 60px;
+        height: 1px;
+        animation-duration: 4s;
+    }
+}
+
+@media (max-width: 480px) {
+    .galaxy-center {
+        width: 180vw;
+        height: 180vh;
+        filter: blur(30px);
+        transform: scale(1.3, 0.4) skewY(-3deg);
+    }
+
+    .galaxy-arms {
+        width: 220vw;
+        height: 220vh;
+        filter: blur(70px);
+        opacity: 0.3;
+        animation-duration: 100s;
+    }
+
+    .comet {
+        width: 50px;
+        height: 1px;
+        animation-duration: 5s;
     }
 }

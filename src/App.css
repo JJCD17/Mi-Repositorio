@@ -1,9 +1,10 @@
 .App {
     position: relative;
     z-index: 1;
-    width: 100%; /* Contenedor ocupe todo el ancho */
-    max-width: 1200px; 
-    text-align: center; /* Centra el texto dentro del contenedor */
+    width: 100%;
+    text-align: center;
+    /* Centra el texto dentro del contenedor */
+    overflow: visible;
 }
 
 section {
@@ -21,7 +22,14 @@ section {
     background: transparent;
 }
 
-h1{
+#habilidades {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
     font-size: 3.2em;
     line-height: 1.1;
 }
@@ -106,29 +114,34 @@ ul li {
 }
 
 img {
-    pointer-events: auto;  
-    user-drag: none;          
-    -webkit-user-drag: none;  
-    user-select: none;        
+    pointer-events: auto;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
 }
 
-.tierra{
+.tierra {
     width: 400px;
 }
 
-.moon{
+.moon {
     width: 100px;
 }
 
-.marte{
+.marte {
     width: 300px;
 }
 
-.jupiter{
+.jupiter {
     width: 550px;
+}
+
+.saturno {
+    padding-top: 5%;
+    width: 850px;
 }
 
 @keyframes float {

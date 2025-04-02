@@ -1,0 +1,9 @@
+.Footer {
+    position: relative;
+    width: 100vw;
+    /* Ocupa el 100% del ancho de la pantalla */
+    max-width: none;
+    left: 50%;
+    transform: translateX(-50%);
+    /* Centra el footer completamente */
+}

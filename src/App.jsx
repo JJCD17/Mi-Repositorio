@@ -1,10 +1,10 @@
 import React from "react";
 import SpaceBackground from "./components/SpaceBackground";
 import Menu from "./components/Menu";
-import CustomCursor from "./components/Customcursor";
 import "./App.css";
 import "./index.css";
 import Footer from "./components/Footer";
+import Habilidades from "./components/Habilidades";
 
 const handleDownload = () => {
   // Ruta del archivo a descargar
@@ -48,7 +48,7 @@ function App() {
           </span>
         </p>
         <h2 className="text-mid">
-          <span className="font-bold">Correo: </span>jjcd1707@gmail.com
+          <span className="font-bold">Correo: </span>jjcd1706@gmail.com
         </h2>
 
         <div className="buttons flex gap-4 pt-5">
@@ -86,81 +86,6 @@ function App() {
           <p className="text-center">
             Centro de Estudios Tecnológicos Industriales y de Servicios
           </p>
-        </div>
-      </section>
-
-      {/* Tecnologías */}
-      <section
-        id="tecnologias"
-        className="min-h-screen flex flex-col items-center justify-center text-center p-5 relative" >
-        <h2 className="text-3xl font-bold mb-6">Tecnologías</h2>
-        <div className="flex gap-6">
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/html.png" alt="HTML5" />
-            </button>
-            <p className="text-sm mt-2">HTML5</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/css-3.png" alt="CSS3" />
-            </button>
-            <p className="text-sm mt-2">CSS3</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/bootstrap.png" alt="Bootstrap" />
-            </button>
-            <p className="text-sm mt-2">Bootstrap</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/Csharp.png" alt="C#" />
-            </button>
-            <p className="text-sm mt-2">C#</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/mysql.png" alt="MySQL" />
-            </button>
-            <p className="text-sm mt-2">MySQL</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/js.png" alt="JavaScript" />
-            </button>
-            <p className="text-sm mt-2">JavaScript</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/flutter.png" alt="Flutter" />
-            </button>
-            <p className="text-sm mt-2">Flutter</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/Android_Studio.png" alt="Android Studio" />
-            </button>
-            <p className="text-sm mt-2">Android Studio</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/git.png" alt="Git" />
-            </button>
-            <p className="text-sm mt-2">Git</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/vscode.png" alt="VSCode" />
-            </button>
-            <p className="text-sm mt-2">VSCode</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <button>
-              <img className="w-12 h-12" src="src/assets/img/logos/figma.png" alt="Figma" />
-            </button>
-            <p className="text-sm mt-2">Figma</p>
-          </div>
         </div>
       </section>
 
@@ -338,17 +263,7 @@ function App() {
           </div>
         </div>
       </section>
-
-      <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-          <li>Atento al detalle</li>
-          <li>Responsable</li>
-          <li>Creativo</li>
-          <li>Apasionado</li>
-        </ul>
-      </section>
-
+      <Habilidades />
       <Footer />
     </div>
   );
